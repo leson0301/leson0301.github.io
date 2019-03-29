@@ -1,0 +1,34 @@
+#pict{
+
+	width: 30%;
+	height: 500px;
+	background-color: #aee0e8;
+	margin-left: 35%;
+	margin-right:35%;
+	padding: 50px 50px 50px 50px;
+}
+
+#pict div img{
+	width: 100px;
+	height: 100px;
+	transition-duration: .4s;
+}
+
+#pict div{
+
+	
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#pict div img:hover{
+	
+	transform: scale(1.5);
+	
+	transition-duration: .4s;
+
+}
+
+
+
