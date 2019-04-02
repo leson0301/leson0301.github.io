@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+.header{
+	width: 100%;
+	height: 100px;
+	background-color: #232f3e;
+	
+}
+
+.header1{
+	width: 100%;
+	height: 50px;
+	float: left;
+	background-color: #232f3e;
+}
+
+.header1 div a img{
+	height: 40px;
+}
+
+.header1 .logo a img{
+	width: 100px;
+}
+
+.logo{
+	float: left;
+	padding-top: 5px;
+	padding-left: 30px;
+
+}
+
+.logo1{
+	float: right;
+	padding-top: 5px;
+	padding-right: 30px;
+}
+
+
+
+.header2{
+	background-color: #232f3e;
+	width: 100%;
+	height: 50px;
+
+
+
+}
+
+.header21{
+	float: left;
+	margin-left: 10px;
+}
+
+
+.header21 a{
+	height: 50px;
+	line-height: 50px;
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+}
+
+
+
+.header21 a .span2{
+	font-weight: bold;
+}
+
+
+.header22{
+	float: left;
+	
+}
+
+.header22 ul{
+	list-style-type: none;
+	
+}
+
+.header22 ul li{
+	display: inline-table;
+	width: 130px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.header22 ul li a{
+	color: #ccc;
+	text-decoration: none;
+	font-size: 14px;
+	display: block;
+}
+
+.header22 ul .header222{
+	font-weight: bold;
+}
+
+.header22 ul .header222 a{
+	color: white;
+}
+
+.header22 ul li a:hover{
+	border: 1px solid #ccc;
+}
+
+
+.header22 ul li .header2222 li{
+	width: 200px;
+	background-color: #232f3e;
+	display: none;
+}
+
+.header22 ul li .header2222 li a{
+	font-weight: initial;
+	color: white;
+	display: block;
+}
+
+.header22 ul li:hover .header2222 li{
+	border-bottom: 1px solid white;
+	display: block;
+	background-color: #687b31;
+}
