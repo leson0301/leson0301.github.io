@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CALCULATOR</title>
+	<meta charset="utf-8">
+
+	<script type="text/javascript">
+		
+		function myClick(num){
+			document.form.textview.value += num;
+		}
+
+		function equal(){
+
+			let numb = document.form.textview.value;
+
+			if(numb){
+
+				document.form.textview.value = eval(numb);
+			}
+		}
+
+
+		function zero(){
+
+			document.form.textview.value = "";
+
+		}
+
+		function back(){
+
+			let numb = document.form.textview.value;
+
+			document.form.textview.value = numb.substring(0, (numb.length - 1))
+		}
+
+
+		function square(){
+
+			let numb = document.form.textview.value;
+
+			document.form.textview.value = Math.pow(numb,2);
+
+		}
+
+
+		function sprt(){
+
+			let numb = document.form.textview.value;
+
+			
+
+			document.form.textview.value = Math.pow(numb,1/2);
+
+		}
+
+	</script>
+	<style type="text/css">
+		
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		body{
+
+			background-color:  #846b90;
+		}
+
+		.button{
+
+			width: 50px;
+			height: 50px;
+			font-size: 25px;
+			margin: 5px;
+			background-color: #83b7de;
+			border: none;
+			color: white;
+
+		}
+
+		.textview{
+
+			width: 224px;
+			margin: 5px;
+			font-size: 25px;
+			padding: 5px;
+			;
+			color: #607d8b;
+
+		}
+
+		.main{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="main">
+		
+		<form name="form">
+			
+			<input type="" name="textview" class="textview">
+
+		</form>
+
+		<table>
+			
+			<tr>
+				
+				<td><input class="button" type="button" value="C" onclick="zero()"></td>
+				<td><input class="button" type="button" value="DEL" onclick="back()"></td>
+				<td><input class="button" type="button" value="/" onclick="myClick('/')"></td>
+				<td><input class="button" type="button" value="x" onclick="myClick('*')"></td>
+
+			</tr>
+
+
+			<tr>
+				
+				<td><input class="button" type="button" value="7" onclick="myClick(7)"></td>
+				<td><input class="button" type="button" value="8" onclick="myClick(8)"></td>
+				<td><input class="button" type="button" value="9" onclick="myClick(9)"></td>
+				<td><input class="button" type="button" value="-" onclick="myClick('-')"></td>
+
+			</tr>
+
+
+			<tr>
+				
+				<td><input class="button" type="button" value="4" onclick="myClick(4)"></td>
+				<td><input class="button" type="button" value="5" onclick="myClick(5)"></td>
+				<td><input class="button" type="button" value="6" onclick="myClick(6)"></td>
+				<td><input class="button" type="button" value="+" onclick="myClick('+')"></td>
+
+			</tr>
+
+
+			<tr>
+				
+				<td><input class="button" type="button" value="1" onclick="myClick(1)"></td>
+				<td><input class="button" type="button" value="2" onclick="myClick(2)"></td>
+				<td><input class="button" type="button" value="3" onclick="myClick(3)"></td>
+				<td><input class="button" type="button" value="√" onclick="sprt()"></td>
+				
+
+			</tr>
+
+
+			<tr>
+				
+				<td><input class="button" type="button" value="0" onclick="myClick(0)"></td>
+				<td><input class="button" type="button" value="." onclick="myClick('.')"></td>
+				<td><input class="button" type="button" value="^2" onclick="square()"></td>
+				<td><input class="button" type="button" value="=" onclick="equal()"></td>
+				
+
+			</tr>
+
+		</table>
+
+	</div>
+
+</body>
+</html>
