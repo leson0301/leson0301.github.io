@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Quiz</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+  <style type="text/css">
+    body {
+      font-family: serif;
+      background: #6cf;
+    }
+
+    .container {
+      height: 330px;
+      width: 1000px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      background: #3e3e3e;
+      padding: 20px;
+      border: 1px solid #499684;
+      box-shadow: 0 0 8px 3px #3ce440;
+
+    }
+
+    .title {
+      padding-top: 20px;
+      text-align: center;
+      font-size: 30px;
+      text-transform: uppercase;
+      color: #e4b36c;
+    }
+
+    .question {
+      padding: 20px;
+      font-size: 22px;
+      background-color: #de3ab5;
+      border-radius: 20px;
+      margin: 10px 0 10px 0;
+      color: white;
+    }
+
+    .option {
+      width: 470px;
+      display: inline-block;
+      padding: 10px 0 10px 15px;
+      vertical-align: middle;
+      background-color: #1c8e24;
+      margin: 10px 0 10px 10px;
+      color: #000000;
+      border-radius: 20px;
+
+    }
+
+    .option:hover {
+      background-color: #2a3cb3;
+      color: white;
+
+    }
+
+    .next-btn {
+      border: none;
+      outline: none;
+      background-color: #96de67;
+      width: 100px;
+      height: 35px;
+      border-radius: 20px;
+      cursor: pointer;
+      float: right;
+      margin: 10px;
+    }
+
+    .next-btn:hover {
+      background-color: #efe61a;
+      color: #b16b31;
+    }
+
+    .result {
+      height: 100px;
+      text-align: center;
+      font-size: 75px;
+      color: white;
+      background: #ea3535;
+      border-radius: 50%;
+    }
+
+    .option input:checked. option {
+      background-color: #c9e80f;
+      color: #c9e80f;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="quizContainer" class="container">
+
+    <div class="title">Computer Quiz</div>
+    <div id="question" class="question"></div>
+    <label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"></span></label>
+    <label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span></label>
+    <label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"></span></label>
+    <label class="option"><input type="radio" name="option" value="4" /> <span id="opt4"></span></label>
+
+    <button id="nextButton" class="next-btn" onclick="loadNextQuestion ();">Next Question</button>
+
+  </div>
+
+  <div id="result" class="container result" style="display: none;"></div>
+  <script type="text/javascript">
+    let questions = [{
+      "question": " Loại cá gì sống được cả ở biển và ở sông .Cần 4-5 năm để phát triển từ cá bột đến lúc trưởng thành?",
+      "option1": "Cá hồi",
+      "option2": "Cá chuối",
+      "option3": "Cá ngừ",
+      "option4": "Cá đuối",
+      "answer": "1"
+    }, {
+      "question": " Sông Cầu, sông Thương, sông Lục Nam hợp thành sông gì?",
+      "option1": "Sông Đuống",
+      "option2": "Sông Thái Bình",
+      "option3": "Sông Hồng",
+      "option4": "Sông Cả",
+      "answer": "2"
+    }, {
+      "question": " Thành phố đông dân nhất thế giới hiện nay là thành phố nào?",
+      "option1": "Tokyo",
+      "option2": "Mexico City",
+      "option3": "New York",
+      "option4": "New Dehli",
+      "answer": "1"
+    }, {
+      "question": " Người châu Á đầu tiên đoạt giải F.Chopin",
+      "option1": "Đặng Thái Sơn",
+      "option2": "Đặng Thanh Hằng",
+      "option3": "Bùi Công Duy",
+      "option4": "Hoàng Thanh Trang",
+      "answer": "1"
+    }, {
+      "question": " Đàn Talư là của dân tộc nào của Việt Nam?",
+      "option1": "H’mông",
+      "option2": "Thái",
+      "option3": "Vân Kiêu",
+      "option4": "Raglai",
+      "answer": "3"
+    }];
+    let currentQuestion = 0;
+    let score = 0;
+    let totQuestions = questions.length;
+    let container = document.getElementById('quizContainer');
+    let questionEl = document.getElementById('question');
+    let opt1 = document.getElementById('opt1');
+    let opt2 = document.getElementById('opt2');
+    let opt3 = document.getElementById('opt3');
+    let opt4 = document.getElementById('opt4');
+    let nextButton = document.getElementById('nextButton');
+    let resultCont = document.getElementById('result');
+
+    function loadQuestion(questionIndex) {
+      let q = questions[questionIndex];
+      questionEl.textContent = (questionIndex + 1) + '. ' + q.question;
+      opt1.textContent = q.option1;
+      opt2.textContent = q.option2;
+      opt3.textContent = q.option3;
+      opt4.textContent = q.option4;
+    };
+
+    function loadNextQuestion() {
+      let selectedOption = document.querySelector('input[type=radio]:checked');
+      if (!selectedOption) {
+        alert('Mời bạn chọn câu trả lời');
+        return;
+      }
+      let answer = selectedOption.value;
+      if (questions[currentQuestion].answer == answer) {
+        score += 1;
+      }
+      selectedOption.checked = false;
+      currentQuestion++;
+      if (currentQuestion == totQuestions - 1) {
+        nextButton.textContent = 'finish';
+      }
+      if (currentQuestion == totQuestions) {
+        container.style.display = 'none';
+        resultCont.style.display = '';
+        if (score == 5) {
+          resultCont.textContent = 'Xin Chúc Mừng bạn.';
+        } else {
+          resultCont.textContent = 'your score: ' + score;
+          return;
+        }
+      }
+      loadQuestion(currentQuestion);
+    }
+    loadQuestion(currentQuestion);
+  </script>
+
+</body>
+
+</html>
