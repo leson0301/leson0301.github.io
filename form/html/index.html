@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Form</title>
+	<style type="text/css">
+		
+		*{
+			padding: 0;
+			margin: 0;
+			
+			font-family: serif;
+		}
+
+
+		.form{
+			width: 40%;
+			color: #eaf1fa;
+			margin-left: 30%;
+			margin-top: 10%;
+			line-height: 35px;
+			font-size: 15px;
+			background: #021d1b;
+			text-align: center;
+
+		}
+
+		.submit{
+			margin-left: 0%;
+			margin-top: 1%;
+			color: #50df50;
+			background: #09221c;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<form action="register.html" class="form">
+		<span class="text">Họ và tên:</span><br>
+		<input type="text" name="name" placeholder="Họ tên"><br>
+		<select id="date" onclick="birth()">
+			<option value="ngày"></option>
+		</select>
+		<select id="month" onclick="birth()">
+			<option>Tháng ...</option>
+		</select>
+		<select id="year" onclick="birth()">
+			<option>Năm ...</option>
+		</select><br>
+		<input type="radio" name="gender" value="gender" id="gender"><label for="gender">Nữ</label>
+		<input type="radio" name="gender" value="gender" id="gender1"><label for="gender1">Nam</label><br>
+		<span class="text">Email:</span><br>
+		<input type="email" name="email" placeholder="Email"><br>
+		<span class="text">Mật khẩu:</span><br>
+		<input type="password" name="password" placeholder="****"><br>
+		<span class="text">Số điện thoại:</span><br>
+		<input type="text" name="number" placeholder="012346"><br>
+		<span class="text">Địa chỉ:</span><br>
+		<input type="text" name="address" placeholder="address"><br>
+
+		<input type="submit" name="add" onclick="myClick()" class="submit" value="Đăng Ký">
+
+
+
+
+	</form>
+
+	<script type="text/javascript">
+	
+		function birth(){
+
+
+		let day = `<option>Ngày<option>`;
+		let month = `<option>Tháng<option>`;
+		let year = `<option>Năm<option>`;
+
+		
+			for(let i = 1; i <= 30; i++){
+				day += `<option> ${i} <option>`;
+			}
+		
+					for(let i = 1; i <= 12; i++){
+				month += `<option>Tháng ${i} <option>`;
+			}
+		
+		
+			for(let i = 2019; i >= 1950; i--){
+				year += `<option>Năm ${i} <option>`;
+			}
+		
+
+
+		document.getElementById('date').innerHTML = day;
+		document.getElementById('month').innerHTML = month;
+		document.getElementById('year').innerHTML = year;
+
+
+		}
+
+		
+
+
+	</script>
+
+</body>
+</html>
