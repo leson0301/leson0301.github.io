@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>register</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<h1 id="h1">Đăng ký thành công</h1>
+	<span id="check1"></span>
+	<script type="text/javascript" >
+		
+		let str = decodeURIComponent(window.location.href);
+		let a = document.getElementById('h1').innerText;
+		a = str;
+
+		let b = a.slice(a.indexOf('name'));
+		
+		let y = b.replace(/&/g, "<br>");
+        let x = y.replace(/=/g, ": ");
+        let z = x.split('+').join(" ");
+        let k;
+       	       
+       k = z.charAt(0).bold().toUpperCase() + z.slice(1);
+        		document.getElementById("check1").innerHTML = k;
+
+	</script>
+
+</body>
+</html>
