@@ -1,0 +1,13 @@
+.mb-3, {
+    margin-top: 10rem;
+    margin-left: 10rem;
+}
+
+.no-gutters{
+    padding: 5rem 5rem;
+}
+
+body {
+    line-height: 1.5;
+    
+}
