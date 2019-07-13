@@ -1,0 +1,313 @@
+html, body {
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* header */
+
+
+
+.nabar-branch {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.nabar-branch:hover {
+    text-decoration: none;
+}
+
+.navbar-nav_1 li a {
+    color: white !important;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.navbar-nav_1 li {
+    padding-left: .8rem;
+    padding-right: .8rem;
+}
+
+.collapse_1 {
+    margin-left: 4rem;
+}
+
+.cardtext-white {
+    position: relative;
+}
+
+.navbar {
+    position: absolute;
+    top: 2%;
+    width: 100%;
+    background-color: none;
+    z-index: 1;
+}
+
+.btn-primary {
+    background-color: #f05e75;   
+    border: 0px solid rgb(31, 28, 28);
+    font-size: 1rem;
+
+}
+
+.btn-primary:hover {
+    background-color: yellow;
+    color: black;
+}
+
+
+.card-img-overlay {
+    top: 40%;
+    width: 100%;
+    left: 10%;
+    z-index: 1;
+}
+
+.card_1 {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    z-index: 1;
+    width: 30%;
+    height: 40%;
+    background-color: #e65893;
+    border: 0px solid black;
+}
+
+.nut1 {
+    border: 0px solid rgb(31, 28, 28);
+    background-color: yellow;
+    color: black;
+    font-size: 1rem;
+}
+
+.nut2 {
+    background-color: white;
+    color: black;
+}
+
+.card-img-overlay_1 {
+    width: 90%;
+}
+
+.card-img-overlay_1 h1{
+    color: white;
+    
+}
+
+.card-img-overlay_1 p {
+    color: white;
+    font-size: 1.3rem; */
+}
+
+
+/* content */
+
+.textcontent {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cardtextcontent {
+    border: 0px solid rgb(31, 28, 28);
+}
+
+.card-text_1 {
+    color: gray;
+    text-align: center;
+}
+
+
+/* content_2 */
+
+.content_2 {
+    margin: 5rem auto;
+}
+
+.content_2 h2 {
+    text-align: center;
+}
+
+.content_2 p {
+    text-align: center;
+    color: gray;
+}
+
+
+
+/* owl caruolsel */
+
+.owl_1 {
+    margin-top: -3rem;
+}
+
+
+.imgowl {
+    position: relative;
+}
+
+.imgowl {
+    
+}
+
+.imgowl_1 h5 {
+    position: absolute;
+    bottom: 5%;
+    left: auto;
+    right: auto;
+    
+}
+
+
+/* content 3 */
+
+/* slice */
+.carousel-caption h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 15%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2rem;
+}
+
+/* next */
+
+.next1 {
+    border: 0px solid rgba(0,0,0,.125); */
+    border-radius: 0rem;
+    position: relative;
+}
+
+.next2 {
+    float: left;
+    position: absolute;
+    top: 30%;
+    width: 50%;
+}
+
+.next3 {
+    /* float: right; */
+    /* margin-right: 10rem; */
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    background-color: yellow;
+    color: black;
+}
+
+/* end */
+.cuoicung a {
+    
+    color: black;
+}
+
+    
+.cuoicung_1 ul li a {
+    color: black !important;
+}
+
+.icon li {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+
+/* media */
+
+/* @media (max-width: 576px) { 
+    .card-img-overlay_1 h1 {
+        font-size: 0.5rem;
+    }
+
+    .card-img-overlay_1 p {
+        font-size: 0.5rem;
+    }
+
+    .nut1 {
+        font-size: 0.5rem;
+    }
+
+    .nut2 {
+        font-size: 0.5rem;
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) { 
+
+    .card-img-overlay_1 h1 {
+        font-size: 0.7rem;
+    }
+
+    .card-img-overlay_1 p {
+        font-size: 0.7rem;
+    }
+
+    .nut1 {
+        font-size: 0.7rem;
+    }
+
+    .nut2 {
+        font-size: 0.7rem;
+    }
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) { 
+
+    .card-img-overlay_1 h1 {
+        font-size: 0.8rem;
+    }
+
+    .card-img-overlay_1 p {
+        font-size: 0.8rem;
+    }
+
+    .nut1 {
+        font-size: 0.8rem;
+    }
+
+    .nut2 {
+        font-size: 0.8rem;
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) { 
+
+    .card-img-overlay_1 h1 {
+        font-size: 1rem;
+    }
+
+    .card-img-overlay_1 p {
+        font-size: 1rem;
+    }
+
+    .nut1 {
+        font-size: 1rem;
+    }
+
+    .nut2 {
+        font-size: 1rem;
+    }
+
+ } */
+
+
+
