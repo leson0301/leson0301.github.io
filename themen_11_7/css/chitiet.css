@@ -1,0 +1,115 @@
+/* breadcrumb */
+
+.breadcrumb {
+    background-color: white;
+    border-bottom: 1px solid rgba(10, 9, 9, .5);
+}
+
+/* end breadcrumb */
+
+
+/* chi tiết sản phẩm */
+
+.product-images {
+    list-style-type: none;
+}
+
+.card-body {
+    text-align: left;
+}
+
+.card-body h5 {
+    text-align: center;
+}
+
+/* scroll */
+
+.anyClass {
+    height:33rem;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+/* thông tin sản phẩm */
+
+.col-md-3 {
+    text-align: left;
+}
+
+.col-md-3 h3 {
+    color: black;
+    font-weight: bold;
+}
+
+.col-md-3 span {
+    color: red;
+    font-family: 'Rhodium Libre';
+}
+
+.price_1 {
+    color: red;
+}
+
+.price {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.welcome_1 {
+    margin-top: 2rem;
+}
+
+.dropdown-menu_1 {
+    background-color: rgb(43, 41, 41);
+    
+}
+
+.dropdown-menu_1 a {
+    color: rgb(235, 222, 222);
+}
+
+.cart {
+    background-color: rgb(37, 35, 35);
+    color: white;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.cart:hover {
+    background-color: rgb(158, 152, 152);
+    color: black;
+}
+
+.cart_2 {
+    background-color: rgb(100, 76, 76);
+    color: white;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.cart_2:hover {
+    background-color: rgb(37, 35, 35);
+    color: white;
+}
+
+.icon {
+    margin-right: 0 !important;
+}
+
+.icon i {
+    text-decoration: none;
+    margin-right: 0;
+}
+
+.fa {
+    /* font-size: 1.5rem; */
+    
+}
+
+.spanicon {
+    text-align: right;
+}
+
+.spanicon i {
+    font-size: 1.5rem;
+}
