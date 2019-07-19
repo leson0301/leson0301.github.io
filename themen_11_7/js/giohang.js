@@ -90,7 +90,9 @@ $('.stop').on('click',function(){
 //     }
 // })
 
-
+$(".btndathang").click(function(){
+    $(".xacnhandonhang").toggle();
+  });
 
 
   });

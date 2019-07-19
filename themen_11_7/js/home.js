@@ -93,4 +93,17 @@ $('.stop').on('click',function(){
 
 
 
+
+  });
+
+  
+  $(document).ready(function(){
+      
+        
+        $(".signup").click(function(){
+        
+            $(".signup_1").toggle();
+          });
+      
+    
   });

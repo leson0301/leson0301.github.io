@@ -191,6 +191,17 @@ html, body {
 .card {
     margin-bottom: 2rem;
 }
+
+.cardhome {
+    transition: all 0.5s ease;
+}
+
+.cardhome:hover {
+    -webkit-box-shadow: 8px 6px 5px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 8px 6px 5px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 8px 6px 5px -2px rgba(0, 0, 0, 0.75);
+    transition: all 0.5s ease;
+}
 /* end sp mới nhất */
 
 
