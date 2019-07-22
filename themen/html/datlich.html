@@ -61,17 +61,74 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Đăng nhập <span class="sr-only">(current)</span></a>
+                        <a class="nav-link signup" href="#"
+                            onclick="document.getElementById('id01').style.display='block'">Đăng ký <span
+                                class="sr-only">(current)</span></a>
+
+                        <div id="id01" class="modal">
+
+
+                            <form class="modal-content animate" action="/action_page.php">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+
+                                </div>
+
+                                <div class="container">
+                                    <h1 class="text-center">sign up</h1>
+                                    <div class="form-group">
+                                        <label for="email">Email address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="enter email">
+                                        <p class="emailError"></p>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control" id="password"
+                                            placeholder="Password">
+                                        <p class="passwordError"></p>
+                                    </div>
+
+                                    <div class="form-check">
+
+                                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                                        <label for="rememberMe" class="form-check-label">Check me out</label>
+                                    </div>
+
+                                    <button type="submit" class="btn brn-success btn-block my-3 signup_3">Sign
+                                        up</button>
+
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn">Cancel</button>
+
+                                </div>
+                            </form>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../html/giohang.html">
                             <i class="fa fa-shopping-cart"></i>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
+                    <li class="nav-item iconsearch">
+
+
+
+                        <a class="nav-link iconsearch_1" href="#">
                             <i class="fa fa-search"></i>
                         </a>
+
+                        <!-- <div id="id02" class="mod"> -->
+                        <form class="example inpsearch animate" action="/action_page.php"
+                            style="margin:auto;max-width:500px">
+                            <input type="text" placeholder="Search.." name="search2" class="">
+                            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+                        </form>
+                        <!-- </div> -->
                     </li>
                 </ul>
             </div>
@@ -166,16 +223,17 @@
 
             <form class="formdatlich">
                 <div class="row">
-                    <div class="col-sm-6 col_1">
+                    <div class="col-sm-6 col_1 cot1">
                         <p>Tên<span>*</span> : </p>
                         <input type="text" class="form-control" placeholder="First name">
                         <p>Email<span>*</span> :</p>
+
                         <input type="email" class="form-control" id="colFormLabel" placeholder="your email">
 
                         <p>Ngày đặt may<span>*</span> : </p>
                         <input type="text" class="form-control" placeholder="16/7/2019">
                     </div>
-                    <div class="col-sm-6 col_1 col_2">
+                    <div class="col-sm-6 col_1 col_2 cot1">
                         <p>Họ<span>*</span> : </p>
                         <input type="text" class="form-control" placeholder="Last name">
 

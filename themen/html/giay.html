@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="../owlcarousel/assets/owl.theme.default.min.css">
 
     <title>The Men Shop</title>
-
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
@@ -62,17 +61,74 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Đăng nhập <span class="sr-only">(current)</span></a>
+                        <a class="nav-link signup" href="#"
+                            onclick="document.getElementById('id01').style.display='block'">Đăng ký <span
+                                class="sr-only">(current)</span></a>
+
+                        <div id="id01" class="modal">
+
+
+                            <form class="modal-content animate" action="/action_page.php">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+
+                                </div>
+
+                                <div class="container">
+                                    <h1 class="text-center">sign up</h1>
+                                    <div class="form-group">
+                                        <label for="email">Email address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="enter email">
+                                        <p class="emailError"></p>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control" id="password"
+                                            placeholder="Password">
+                                        <p class="passwordError"></p>
+                                    </div>
+
+                                    <div class="form-check">
+
+                                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                                        <label for="rememberMe" class="form-check-label">Check me out</label>
+                                    </div>
+
+                                    <button type="submit" class="btn brn-success btn-block my-3 signup_3">Sign
+                                        up</button>
+
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn">Cancel</button>
+
+                                </div>
+                            </form>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../html/giohang.html">
                             <i class="fa fa-shopping-cart"></i>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
+                    <li class="nav-item iconsearch">
+
+
+
+                        <a class="nav-link iconsearch_1" href="#">
                             <i class="fa fa-search"></i>
                         </a>
+
+                        <!-- <div id="id02" class="mod"> -->
+                        <form class="example inpsearch animate" action="/action_page.php"
+                            style="margin:auto;max-width:500px">
+                            <input type="text" placeholder="Search.." name="search2" class="">
+                            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+                        </form>
+                        <!-- </div> -->
                     </li>
                 </ul>
             </div>
@@ -158,6 +214,7 @@
         </div>
     </nav>
 
+
     <!-- end menu -->
 
 
@@ -167,10 +224,9 @@
     <div class="container">
         <div class="jumbotron jumbotron-fluid">
             <div class="container slogansale">
-                <h5 class="display-4 sales">SUITS</h5>
-                <p class="lead">Sự cắt ghép hoàn hảo, sự chú ý đến từng chi tiết và sự phù hợp hoàn hảo đến với nhau
-                    trong việc lựa chọn những bộ vest và tuxedo tinh tế của chúng tôi, một điều cần thiết cho những dịp
-                    trang trọng của bạn.</p>
+                <h5 class="display-4 sales">GIÀY</h5>
+                <p class="lead">Không có cái nhìn nào là hoàn chỉnh nếu không có đôi giày hoàn hảo. Cho dù bạn chọn giày
+                    đế bằng hay giày thể thao, những kiểu dáng này sẽ thêm phần thanh lịch cho bộ đồng phục của bạn.</p>
             </div>
         </div>
     </div>
@@ -182,7 +238,7 @@
         <div class="container">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">The Men</a></li>
-                <li class="breadcrumb-item"><a href="#">Suits</a></li>
+                <li class="breadcrumb-item"><a href="#">Giày Tây</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Data</li>
             </ol>
         </div>
@@ -260,7 +316,7 @@
                             <hr>
                         </div>
                         <div class="col-4">
-                            <h6><span><i class="fa fa-star"></i></span> SẢN PHẨM SUITS <span><i
+                            <h6><span><i class="fa fa-star"></i></span> SẢN PHẨM GIÀY TÂY <span><i
                                         class="fa fa-star"></i></span>
                             </h6>
                         </div>
@@ -278,7 +334,7 @@
 
                     <div class="row text-center padding">
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
                             <div class="card cardimg">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
@@ -309,7 +365,7 @@
 
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
                             <div class="card cardimg">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
@@ -340,7 +396,7 @@
 
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
                             <div class="card cardimg">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
@@ -371,36 +427,7 @@
 
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
 
-                            <div class="card cardimg">
-                                <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
-                                <div class="vertical-icon">
-                                    <a href="../html/chitiet.html">
-                                        <p>Chi Tiết</p>
-                                    </a>
-                                    <a href="../html/giohang.html">
-                                        <p class="muangay">Mua Ngay</p>
-                                    </a>
-                                    <a href="../html/giohang.html"><i class="fa fa-shopping-cart"></i></a>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Vest Demi Xanh</h5>
-                                    <div style="color: yellow;">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <!-- Horizontal Rule -->
-                                    <hr>
-                                    <p class="card-text maugia" style="color: red; font-weight: bold;"> 1.950.000 VNĐ
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
 
                     </div>
 
@@ -413,7 +440,7 @@
 
                     <div class="row text-center padding">
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
                             <div class="card cardimg">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
@@ -444,7 +471,7 @@
 
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
                             <div class="card cardimg">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
@@ -475,7 +502,7 @@
 
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
                             <div class="card cardimg">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
@@ -506,36 +533,7 @@
 
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
 
-                            <div class="card cardimg">
-                                <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
-                                <div class="vertical-icon">
-                                    <a href="../html/chitiet.html">
-                                        <p>Chi Tiết</p>
-                                    </a>
-                                    <a href="../html/giohang.html">
-                                        <p class="muangay">Mua Ngay</p>
-                                    </a>
-                                    <a href="../html/giohang.html"><i class="fa fa-shopping-cart"></i></a>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Vest Demi Xanh</h5>
-                                    <div style="color: yellow;">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <!-- Horizontal Rule -->
-                                    <hr>
-                                    <p class="card-text maugia" style="color: red; font-weight: bold;"> 1.950.000 VNĐ
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
 
                     </div>
 
@@ -547,7 +545,7 @@
 
                     <div class="row text-center padding">
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
                             <div class="card cardimg">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
@@ -578,7 +576,7 @@
 
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
                             <div class="card cardimg">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
@@ -609,7 +607,7 @@
 
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
                             <div class="card cardimg">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
@@ -640,36 +638,7 @@
 
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
 
-                            <div class="card cardimg">
-                                <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
-                                <div class="vertical-icon">
-                                    <a href="../html/chitiet.html">
-                                        <p>Chi Tiết</p>
-                                    </a>
-                                    <a href="../html/giohang.html">
-                                        <p class="muangay">Mua Ngay</p>
-                                    </a>
-                                    <a href="../html/giohang.html"><i class="fa fa-shopping-cart"></i></a>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Vest Demi Xanh</h5>
-                                    <div style="color: yellow;">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <!-- Horizontal Rule -->
-                                    <hr>
-                                    <p class="card-text maugia" style="color: red; font-weight: bold;"> 1.950.000 VNĐ
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
 
                     </div>
 
@@ -681,7 +650,7 @@
 
                     <div class="row text-center padding">
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
                             <div class="card cardimg">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
@@ -712,7 +681,7 @@
 
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
                             <div class="card cardimg">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
@@ -743,7 +712,7 @@
 
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
                             <div class="card cardimg">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
@@ -774,36 +743,7 @@
 
                         </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
 
-                            <div class="card cardimg">
-                                <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
-                                <div class="vertical-icon">
-                                    <a href="../html/chitiet.html">
-                                        <p>Chi Tiết</p>
-                                    </a>
-                                    <a href="../html/giohang.html">
-                                        <p class="muangay">Mua Ngay</p>
-                                    </a>
-                                    <a href="../html/giohang.html"><i class="fa fa-shopping-cart"></i></a>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Vest Demi Xanh</h5>
-                                    <div style="color: yellow;">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                    <!-- Horizontal Rule -->
-                                    <hr>
-                                    <p class="card-text maugia" style="color: red; font-weight: bold;"> 1.950.000 VNĐ
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
 
                     </div>
 
