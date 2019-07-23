@@ -4,6 +4,12 @@ $(document).ready(function(e) {
      });
  });
 
+ $(document).ready(function(e) {
+    $('.has-sub-1').click(function(){
+         $(this).toggleClass('tap');
+     });
+ });
+
 
 //  jQuery(document).ready(function($){
 	    
