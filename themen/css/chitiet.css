@@ -113,3 +113,13 @@
 .spanicon i {
     font-size: 1.5rem;
 }
+
+/* spnb */
+
+.cardimg .card-body {
+    text-align: center;
+}
+
+.checked {
+    color: orange;
+  }

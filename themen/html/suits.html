@@ -164,7 +164,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav menu_1">
                     <li class="nav-item active">
-                        <a class="nav-link" href="../html/home.html">Trang chủ <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../html/home.html">Trang chủ <span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../html/sales.html">Khuyến mại</a>
@@ -175,10 +176,10 @@
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="../html/suits.html">Vest công sở</a>
                             <a class="dropdown-item" href="../html/suits.html">Vest cưới</a>
-                            <a class="dropdown-item" href="../html/suits.html">Sỏ mi</a>
+                            <a class="dropdown-item" href="../html/suits.html">Sơ mi</a>
                             <a class="dropdown-item" href="../html/suits.html">Quần âu</a>
-                            <a class="dropdown-item" href="../html/suits.html">Aó măng tô</a>
-                            <a class="dropdown-item" href="../html/suits.html">Aó dạ</a>
+                            <a class="dropdown-item" href="../html/suits.html">Áo măng tô</a>
+                            <a class="dropdown-item" href="../html/suits.html">Áo dạ</a>
 
                         </div>
                     </li>
@@ -287,27 +288,39 @@
                         </li>
 
                         <!-- Horizontal Rule -->
-                        <hr class="light-sales"> 
+                        <!-- <hr class="light-sales">  -->
 
-                        <li class="has-sub"><a>Tìm nhanh<span class="sub-arrow"></span></a>
+                        <div class="timnhanh_1">
+                            <p class="timnhanh">Tìm nhanh</p>
+                        </div>
+
+                        <li class="has-sub"><a class="btn-active" cs-filter="*">Kích cỡ<span
+                                    class="sub-arrow"></span></a>
                             <ul>
-                                    
-                                <li><a href="#" id="1">Kích cỡ</a>
-                                
-                                    <ul>
-                                            <li><a href="#" id="1">Caravat</a></li>
-                                            <li><a href="#" id="1">Nở cổ</a></li>
-                                            <li><a href="#" id="1">Túi xách</a></li>
-                                            <li><a href="#" id="1">Gim cài</a></li>
-                                            <li><a href="#" id="1">Ví da</a></li>
-                                            <li><a href="#" id="1">Dây lưng</a></li>
-                                        </ul>
-
-                                </li>
-                                <li><a href="#" id="1">Màu sắc</a></li>
-                                <li><a href="#" id="1">Chất liệu</a></li> 
-
+                                <li><a cs-filter="s">S</a></li>
+                                <li><a id="1" cs-filter="m">M</a></li>
+                                <li><a id="1" cs-filter="l">L</a></li>
+                                <li><a id="1" cs-filter="xl">XL</a></li>
+                                <li><a id="1" cs-filter="xxl">XXL</a></li>
+                                <li><a id="1" cs-filter="3xl">3XL</a></li>
                             </ul>
+                        </li>
+
+                        <li class="has-sub"><a class="btn-active" cs-filter="*">Màu sắc<span
+                                    class="sub-arrow"></span></a>
+                            <ul>
+                                <li><a id="1" cs-filter="màu đen">Màu đen</a></li>
+                                <li><a id="1" cs-filter="màu tím than">Màu tím than</a></li>
+                                <li><a id="1" cs-filter="màu xanh đen">Màu xanh đen</a></li>
+                                <li><a id="1" cs-filter="màu ghi">Màu ghi</a></li>
+                                <li><a id="1" cs-filter="màu xanh">Màu xanh</a></li>
+                                <li><a id="1" cs-filter="màu vàng">Màu vàng</a></li>
+                                <li><a id="1" cs-filter="màu đỏ">Màu đỏ</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-sub"><a>Chất liệu<span class="sub-arrow"></span></a>
+
                         </li>
 
 
@@ -349,7 +362,7 @@
 
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
-                            <div class="card cardimg">
+                            <div class="card cardimg items" cs-category="màu đen s">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
                                 <div class="vertical-icon">
                                     <a href="../html/chitiet.html">
@@ -361,7 +374,7 @@
                                     <a href="../html/giohang.html"><i class="fa fa-shopping-cart"></i></a>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Vest Demi Xanh</h5>
+                                    <h5 class="card-title">Vest Demi Xanh <span class="size">S</span></h5>
                                     <div>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -380,7 +393,7 @@
 
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
-                            <div class="card cardimg">
+                            <div class="card cardimg items" cs-category="màu tím than s">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
                                 <div class="vertical-icon">
                                     <a href="../html/chitiet.html">
@@ -392,7 +405,7 @@
                                     <a href="../html/giohang.html"><i class="fa fa-shopping-cart"></i></a>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Vest Demi Xanh</h5>
+                                    <h5 class="card-title">Vest Demi Xanh <span class="size">M</span></h5>
                                     <div>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -411,7 +424,7 @@
 
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
-                            <div class="card cardimg">
+                            <div class="card cardimg items" cs-category="màu xanh đen m">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
                                 <div class="vertical-icon">
                                     <a href="../html/chitiet.html">
@@ -423,7 +436,7 @@
                                     <a href="../html/giohang.html"><i class="fa fa-shopping-cart"></i></a>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Vest Demi Xanh</h5>
+                                    <h5 class="card-title">Vest Demi Xanh <span class="size">L</span></h5>
                                     <div>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -455,7 +468,7 @@
 
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
-                            <div class="card cardimg">
+                            <div class="card cardimg items" cs-category="màu ghi m">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
                                 <div class="vertical-icon">
                                     <a href="../html/chitiet.html">
@@ -467,7 +480,7 @@
                                     <a href="../html/giohang.html"><i class="fa fa-shopping-cart"></i></a>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Vest Demi Xanh</h5>
+                                    <h5 class="card-title">Vest Demi Xanh <span class="size">XL</span></h5>
                                     <div>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -486,7 +499,7 @@
 
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
-                            <div class="card cardimg">
+                            <div class="card cardimg items" cs-category="màu xanh l">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
                                 <div class="vertical-icon">
                                     <a href="../html/chitiet.html">
@@ -498,7 +511,7 @@
                                     <a href="../html/giohang.html"><i class="fa fa-shopping-cart"></i></a>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Vest Demi Xanh</h5>
+                                    <h5 class="card-title">Vest Demi Xanh <span class="size">XXL</span></h5>
                                     <div>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -517,7 +530,7 @@
 
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
-                            <div class="card cardimg">
+                            <div class="card cardimg items" cs-category="màu vàng l">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
                                 <div class="vertical-icon">
                                     <a href="../html/chitiet.html">
@@ -529,7 +542,7 @@
                                     <a href="../html/giohang.html"><i class="fa fa-shopping-cart"></i></a>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Vest Demi Xanh</h5>
+                                    <h5 class="card-title">Vest Demi Xanh <span class="size">3XL</span></h5>
                                     <div>
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -560,7 +573,7 @@
 
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
-                            <div class="card cardimg">
+                            <div class="card cardimg items" cs-category="màu đỏ xl">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
                                 <div class="vertical-icon">
                                     <a href="../html/chitiet.html">
@@ -591,7 +604,7 @@
 
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
-                            <div class="card cardimg">
+                            <div class="card cardimg items" cs-category="màu đen xl">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
                                 <div class="vertical-icon">
                                     <a href="../html/chitiet.html">
@@ -622,7 +635,7 @@
 
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
-                            <div class="card cardimg">
+                            <div class="card cardimg items" cs-category="màu tím than xxl">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
                                 <div class="vertical-icon">
                                     <a href="../html/chitiet.html">
@@ -665,7 +678,7 @@
 
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
-                            <div class="card cardimg">
+                            <div class="card cardimg items" cs-category="màu xanh đen xxl">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
                                 <div class="vertical-icon">
                                     <a href="../html/chitiet.html">
@@ -696,7 +709,7 @@
 
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
-                            <div class="card cardimg">
+                            <div class="card cardimg items" cs-category="màu ghi 3xl">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
                                 <div class="vertical-icon">
                                     <a href="../html/chitiet.html">
@@ -727,7 +740,7 @@
 
                         <div class="col-12 col-sm-6 col-md-4 col-lg-4">
 
-                            <div class="card cardimg">
+                            <div class="card cardimg items" cs-category="màu vàng 3xl">
                                 <img src="../img/spnb1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
                                 <div class="vertical-icon">
                                     <a href="../html/chitiet.html">
@@ -770,9 +783,6 @@
             </div>
         </div>
         <!-- end content -->
-
-
-
 
 
         <!-- footer -->
