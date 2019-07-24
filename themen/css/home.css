@@ -78,7 +78,7 @@ html, body {
 
 .checked {
     color: orange;
-  }
+}
 
 .carousel-caption {
     position: absolute;
@@ -149,7 +149,6 @@ html, body {
     .carousel-caption .btn {
         font-size: 60%;
     }
-    
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -166,8 +165,6 @@ html, body {
     .carousel-caption .btn {
         font-size: 120%;
     }
-
-    
 }
 
 /* end carousel */
@@ -212,6 +209,14 @@ html, body {
 .owl_1 {
     /* margin: 2rem auto;  */
     text-align: center;
+}
+
+.owl-next span {
+    font-size: 2rem !important;
+}
+
+.owl-prev span {
+    font-size: 2rem !important;
 }
 
 /* end sp nổi bật */

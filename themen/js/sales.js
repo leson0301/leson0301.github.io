@@ -31,3 +31,22 @@ $(function() {
 		}
   });
 });
+
+
+// component alert
+
+$(document).ready(function() {
+
+    $(".componentalert").hide()
+    $(".cart_3").click(function(){
+        $(".componentalert").toggle();
+      });
+})
+
+$(document).ready(function() {
+
+    
+    $(".closecart").click(function(){
+        $(".componentalert").hide();
+      });
+})

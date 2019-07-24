@@ -484,3 +484,26 @@
 }
 
 
+ /* component alert */
+ .componentalert {
+    background-color: rgb(26, 99, 26);
+    padding-bottom: .7rem;
+    padding-top: .7rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    position: absolute;
+    top: 40vh;
+    left: 40%;
+    z-index: 30;
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.closecart {
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
+
