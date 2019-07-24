@@ -47,3 +47,23 @@ window.CP.exitedLoop(1);
 $(function() {
     Chef.init();
 });
+
+
+// component alert
+
+$(document).ready(function() {
+
+    $(".componentalert").hide()
+    $(".cart_2").click(function(){
+        $(".componentalert").toggle();
+      });
+})
+
+$(document).ready(function() {
+
+    
+    $(".closecart").click(function(){
+        $(".componentalert").hide();
+      });
+})
+

@@ -130,6 +130,10 @@
     padding-right: 1rem;
 }
 
+.main-nav ul li a {
+    padding-left: 0.8rem;
+}
+
 .main-nav li {
     list-style: none;
      margin: 2rem auto; 
@@ -177,8 +181,8 @@
     width: 50%;
     margin-bottom: 0;
     margin-top: 5rem;
-    padding-bottom: .7rem;
-    padding-top: .7rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
     color: aliceblue;
     
 }
@@ -395,7 +399,7 @@
 /* responsive */
 @media only screen and (min-width: 1200px) {
     .vertical-icon {
-        top: 5vh;
+        top: 20vh;
     }
     .vertical-icon p {
         width: 40%;
@@ -416,7 +420,7 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .vertical-icon {
-        top: 4vh;
+        top: 10vh;
     }
     .vertical-icon p {
         width: 40%;
@@ -437,7 +441,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .vertical-icon {
-        top: 4vh;
+        top: 10vh;
     }
     .vertical-icon p {
         width: 40%;
@@ -459,7 +463,7 @@
 
 @media only screen and (max-width: 768px) {
     .vertical-icon {
-        top: 5vh;
+        top: 10vh;
     }
     .vertical-icon p {
         width: 40%;

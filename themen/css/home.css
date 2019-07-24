@@ -8,6 +8,10 @@ html, body {
     color: #222;
 }
 
+.headerfirt {
+    padding: 0 !important;
+}
+
 .navbar {
     background-color: rgba(14, 12, 12, 0.8) !important;
 }
@@ -17,7 +21,7 @@ html, body {
 }
 
 .navbar li a:hover {
-    color: black !important;
+    color: rgb(206, 226, 26) !important;
 }
 
 /* logo */
@@ -236,6 +240,7 @@ html, body {
 
 .my-4 {
     width: 50%;
+    background-color: rgba(14, 13, 13, 0.5);
 }
 
 /* end kẻ ngang */
@@ -259,8 +264,13 @@ html, body {
 /* footer */
 
 footer {
-    background-color: rgba(14, 12, 12, 1);
+    background-color: rgba(14, 12, 12, 0.8);
     color: aliceblue;
+}
+
+.rowfooter {
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 hr.light {
@@ -282,6 +292,10 @@ hr.light {
 .logofooter {
     background-color: rgba(14, 12, 12, 1);
     color: aliceblue;
+}
+
+.copythe {
+    text-align: center;
 }
 
 /* end footer */
@@ -439,10 +453,10 @@ span.psw {
 
 /* dangky css */
 
-label, .form-check-label, h1 {
+/* label, .form-check-label, h1 {
     
     text-shadow: 2px 2px 10px #000;
-}
+} */
 
 .emailError, .passwordError {
     color: red;
