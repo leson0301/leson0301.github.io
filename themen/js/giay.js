@@ -1,103 +1,3 @@
-// owl caruosel
-
-$(document).ready(function () {
-    //default settings:
-    autoplay: false
-    autoplayTimeout: 5000
-    autoplayHoverPause: false
-
-
-
-
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        items: 5,
-
-        loop: true,
-        margin: 50,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: true
-            },
-            300: {
-                items: 1,
-                nav: true
-            },
-            400: {
-                items: 2,
-                nav: true
-            },
-            500: {
-                items: 2,
-                nav: true
-            },
-            600: {
-                items: 2,
-                nav: true
-            },
-            700: {
-                items: 3,
-                nav: true
-            },
-            800: {
-                items: 3,
-                nav: true
-            },
-            900: {
-                items: 3,
-                nav: true
-            },
-            1000: {
-                items: 4,
-                nav: true,
-                loop: true
-            }
-        }
-    });
-    $('.play').on('click', function () {
-        owl.trigger('play.owl.autoplay', [3000]);
-    })
-    $('.stop').on('click', function () {
-        owl.trigger('stop.owl.autoplay');
-    })
-
-
-
-
-    // $('.owl-carousel').owlCarousel({
-    //     loop:true,
-    //     margin:10,
-    //     responsiveClass:true,
-    //     responsive:{
-    //         0:{
-    //             items:1,
-    //             nav:true
-    //         },
-    //         600:{
-    //             items:3,
-    //             nav:false
-    //         },
-    //         1000:{
-    //             items:5,
-    //             nav:true,
-    //             loop:false
-    //         }
-    //     }
-    // })
-
-    $(".btndathang").click(function () {
-        $(".xacnhandonhang").toggle();
-    });
-
-
-});
-
-
 //   giỏ hàng
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
@@ -133,6 +33,21 @@ function ready() {
 
 
 
+// spgiaynangcc
+
+$(document).ready(function() {
+ 
+    
+
+    $(".spgiaynangcc").hide();
+    
+    
+})
+
+
+
+
+
 
 function removeCartItem(event) {
     let buttonClicked = event.target;
@@ -159,7 +74,6 @@ function addToCartClicked(event) {
     let price = shopItem.getElementsByClassName('shop-item-price')[0].innerText;
     let imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src;
     addItemToCart(title, price, imageSrc);
-    
 }
 
 
@@ -169,54 +83,60 @@ function addItemToCart(title, price, imageSrc) {
     let cartItems = document.getElementsByClassName('contaittgiohangtinh')[0];
     let cartRowContents = ` <div class="col-sm-4 colboder">
 
-    <div class="card mb-3 cardcart">
-        <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="${imageSrc}" class="card-img img-fluid" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body cardtextgiohang">
-                    <h5 class="card-title">${title}</h5>
+        <div class="card mb-3 cardcart">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="${imageSrc}" class="card-img img-fluid" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body cardtextgiohang">
+                        <h5 class="card-title">${title}</h5>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-</div>
+        <div class="col-sm-3 colboder">
 
-<div class="col-sm-3 colboder">
+            <p class="monney dongia">1950000 đ</p>
 
-    <p class="monney dongia">${price}</p>
+        </div>
 
-</div>
+        <div class="col-sm-1 colboder sl">
 
-<div class="col-sm-1 colboder sl">
+            <input class="cart-quantity-input" type="number" value="1" style="width: 100% !important;">
 
-    <input class="cart-quantity-input" type="number" value="1" style="width: 100% !important;">
+                            
 
-    
+        </div>
 
-</div>
+        <div class="col-sm-1 colboder">
 
-<div class="col-sm-1 colboder">
+            <p>
+                <a class="btn-danger"><i class="fa fa-trash"></i></a>
+            </p>
 
-    <p>
-        <a class="btn-danger"><i class="fa fa-trash"></i></a>
-    </p>
-
-</div>
+        </div>
 
 
 
-<div class="col-sm-3 colboder">
+        <div class="col-sm-3 colboder">
 
-    <p class="monney  thanhtien">1.950.000 đ</p>
+            <p class="monney dongia">${price}</p>
 
-</div>`
+        </div>
+
+
+
+
+
+
+
+
+    </div>`
     
     cartRow.innerHTML = cartRowContents;
     cartItems.append(cartRow);
-    
 }
 
 
@@ -250,11 +170,3 @@ function updateCartTotal() {
 }
 
 // updateCartTotal();
-
-
-
-
-
-
-
-
