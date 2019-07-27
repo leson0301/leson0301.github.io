@@ -115,6 +115,9 @@ function ready() {
         button.addEventListener('click', removeCartItem);
     }
 
+
+    
+
     let quantityInputs = document.getElementsByClassName('cart-quantity-input');
     for (let i = 0; i < quantityInputs.length; i++) {
         let input = quantityInputs[i];
