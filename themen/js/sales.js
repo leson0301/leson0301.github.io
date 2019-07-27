@@ -152,6 +152,10 @@ $(document).ready(function () {
 		$(".spsuits").show();
 	});
 
+	$(".vestnam").click(function () {
+		$(".spvestcongso").hide();
+	});
+
 	$(".vestcongso").click(function () {
 		$(".spvestcongso").show();
 	});
